@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Summary: Latitude vs. X</title>
+    <title>Wind Speed</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.6.0/dist/minty/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -27,7 +27,7 @@
                             <a class="dropdown-item" href="/max_temperature.html">Max Temperature</a>
                             <a class="dropdown-item" href="/humidity.html">Humidity</a>
                             <a class="dropdown-item" href="/cloudiness.html">Cloudiness</a>
-                            <a class="dropdown-item" href="/wind_speed.html">Wind Speed</a>
+                            <a class="dropdown-item active" href="/wind_speed.html">Wind Speed</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -39,22 +39,23 @@
                 </ul>
             </div>
         </nav>
+
         <div class="row main-content">
             <div class="col">
                 <div class="row">
                     <div class="col-lg-1"></div>
                     <div class="col-lg content-panel">
                          <div class="content-panel-header">
-                            <h1>Summary: Latitude vs. X</h1>
+                            <h1 class="text-left">Wind Speed</h1>
+                            <hr />
                          </div>
                         <div class="content-panel-content">
-                            <figure class="figure float-left">
-                                <img data-src="assets/images/Fig1.png" src="assets/images/Fig1.png">
+                            <figure class="figure">
+                                <img data-src="assets/images/Fig4.png" src="assets/images/Fig4.png">
                             </figure>
-                            <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to asemble a dataset on over 500 cities.</p>
-                            <p>After Assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperatures.</p>
+                            <p>&nbsp;</p>
                         </div>
-                    </div>
+                        </div>
                     <div class="col-lg content-panel visualizations">
                         <div class="content-panel-header">
                             <h1>Visualizations</h1>
@@ -86,7 +87,7 @@
                                 </div>
                                 <div class="col">
                                     <a href="/wind_speed.html">
-                                        <figure class="figure">
+                                        <figure class="figure active-visualization">
                                             <img data-src="assets/images/Fig4.png" src="assets/images/Fig4.png">
                                         </figure>
                                     </a>

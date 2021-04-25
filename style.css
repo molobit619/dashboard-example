@@ -1,12 +1,14 @@
+.container-fluid nav {
+    padding: unset;
+}
 #navbarSupportedContent {
-    justify-content: flex-end;
+    padding-left: .5em;
 }
 
 .main-content {
     background-color: var(--light)!important;
     min-height: calc(100vh - 46px);
 }
-
 
 .content-panel {
     background-color: #ffff;
@@ -23,10 +25,12 @@
     text-align: center;
 }
 
-.content-panel  {
-    p {
-        line-height: 1.5;
-    }
+.content-panel h4 {
+    color: var(--primary)!important;
+}
+
+p {
+    line-height: 2;
 }
 .content-panel-content .wrap-text  {
     width: 3em;
@@ -43,8 +47,16 @@ figure.float-left {
     width: 100%!important;
 }
 
+.visualizations img:hover {
+    border: .1em solid var(--teal);
+}
+
+.active-visualization {
+    border: .25em solid var(--primary);
+}
+
 @media screen and (max-width: 768px) {
-    .navbar-custom {
+    .navbar-custom .container {
         background-color: var(--primary)!important;
     }
 
@@ -60,7 +72,8 @@ figure.float-left {
     }
 }
 
-@media screen and (min-width: 768px) {
-    .content-panel-content {
+@media screen and (min-width: 1025px) {
+    figure.float-left {
+        width: 20em;
     }
 }
