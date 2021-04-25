@@ -1,15 +1,66 @@
-div.container-fluid {
-    padding-left: unset;
-    padding-right: unset;
+#navbarSupportedContent {
+    justify-content: flex-end;
+}
+
+.main-content {
+    background-color: var(--light)!important;
+    min-height: calc(100vh - 46px);
 }
 
 
-.navbar-custom {
-    background-color: primary!important;
+.content-panel {
+    background-color: #ffff;
+    margin-top: 2em;
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+.content-panel-header h1 {
+    padding-top: 1em;
+    color: var(--primary)!important;
+    font-weight: 800;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.content-panel  {
+    p {
+        line-height: 1.5;
+    }
+}
+.content-panel-content .wrap-text  {
+    width: 3em;
+}
+.content-panel-content img {
+    width: 100%;
+}
+
+figure.float-left {
+    width: 12em;
+}
+
+.visualizations img {
+    width: 100%!important;
 }
 
 @media screen and (max-width: 768px) {
-   .navbar-header {
-      background-color: primary!important;
-  }
+    .navbar-custom {
+        background-color: var(--primary)!important;
+    }
+
+    figure.float-left {
+        width: 8em;
+    }
+
+    .visualizations .content-panel-content {
+        display: flex;
+    }
+    .content-panel-content .row {
+        margin: unset;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .content-panel-content {
+    }
 }
